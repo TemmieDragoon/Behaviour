@@ -39,7 +39,7 @@ int main()
 	while (true) {
 		//een eigen timer
 		if ((clock() - previousFrameTime) / CLOCKS_PER_SEC >= delay) {
-			std::fill(scene.begin(), scene.end(), "_");
+			std::fill(scene.begin(), scene.end(), "=");
 			system("cls");
 			//std::cout << "[" << clock() << "] updating" << std::endl;
 			for (Character* aCharacter : characters) {
